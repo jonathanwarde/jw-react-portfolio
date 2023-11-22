@@ -1,7 +1,8 @@
 {
-  "name": "citr-v8-project",
+  "name": "Jon Warde Portfolio",
   "version": "8.0.0",
-  "description": "Complete Intro to React v8 project",
+  "description": "portfolio/CV website for Jon Warde",
+  "homepage": "https://jonathanwarde.github.io/jw-react-portfolio/",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
@@ -11,7 +12,7 @@
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
   },
   "keywords": [],
-  "author": "Brian Holt",
+  "author": "Jon Warde",
   "license": "ISC",
   "devDependencies": {
     "@vitejs/plugin-react": "^2.1.0",

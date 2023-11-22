@@ -5,6 +5,7 @@ const App = () => {
     return (
         <div>
             <h1>Jonathan Warde</h1>
+            <p>Web developer</p>
             <Project name="Top Secret Comedy Club" description="Marketing site and Vue.js events management app for UK's top rated comedy cub" />
         </div>
     );
