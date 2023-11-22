@@ -1,6 +1,6 @@
-# jw-react-portfolio
+#Jonathan Warde
+###web developer
 
-## npm init
-## npm install
-## npm run build
-## npm run preview
+##jonwarde@gmail.com
+##https://github.com/jonathanwarde
+##https://www.linkedin.com/in/jonwarde/
