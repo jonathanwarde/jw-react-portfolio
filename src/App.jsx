@@ -1,3 +1,4 @@
+import './scss/global.scss';
 import { createRoot } from "react-dom/client";
 import Project from "./Project";
 

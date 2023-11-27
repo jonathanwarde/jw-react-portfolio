@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d src/dist"
   },
   "keywords": [],
   "author": "Jon Warde",
@@ -24,6 +24,7 @@
     "eslint-plugin-react": "^7.31.8",
     "gh-pages": "^6.1.0",
     "prettier": "2.7.1",
+    "sass": "^1.69.5",
     "vite": "^3.1.4"
   },
   "dependencies": {
