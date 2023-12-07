@@ -1,0 +1,11 @@
+header {
+  @media screen and (min-width: 900px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    .hero-img {
+      width: 20rem;
+    }
+  }
+}
