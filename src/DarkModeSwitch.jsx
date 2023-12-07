@@ -1,8 +1,14 @@
 import './scss/components/_dark-mode-switch.scss';
-import './js/dark-mode-switch.js';
 const DarkModeSwitch = (props) => {
+    function toggleDarkMode() {
+        document.body.classList.toggle('-dark-mode');
+    }
     return (
-        <button className="dark-mode-btn js-dark-mode-btn btn-reset">
+        <button
+            className="dark-mode-btn js-dark-mode-btn btn-reset"
+            onClick={toggleDarkMode}
+
+        >
             <span className="visually-hidden">dark mode switch</span>
             <svg viewBox="0 0 73.5 152.5">
                 <g>
