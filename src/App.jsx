@@ -4,6 +4,7 @@ import { createRoot } from "react-dom/client";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Project from "./Project";
 import Nav from "./Nav";
+import HeroImg from "./HeroImg";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Services from "./pages/Services";
@@ -22,7 +23,7 @@ const App = () => {
                     <h1>Full stack (front end focussed) web developer</h1>
                     <p>Jonathan Warde</p>
                 </div>
-                <img src="img/jonwarde.png" alt="Jonathan Warde" className="hero-img" />
+                <HeroImg />
             </header>
             <div className="flex-layout">
                 <main>
@@ -33,7 +34,6 @@ const App = () => {
                         <Route path="/blog" element={<Blog />} />
                         <Route path="/contact" element={<Contact />} />
                     </Routes>
-
                 </main>
                 <aside>
                     <div className="section">

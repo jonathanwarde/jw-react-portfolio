@@ -1,0 +1,30 @@
+.hero-img-container {
+  display: grid;
+
+  & > * {
+    grid-area: 1 / 1;
+  }
+
+  svg {
+    height: auto;
+  }
+
+  @media screen and (max-width: 900px) {
+    img {
+      width: 100%;
+      max-width: 40rem;
+    }
+    svg {
+      width: 100%;
+      max-width: 40rem;
+    }
+  }
+}
+
+.-dark-mode {
+  .hero-img-container {
+    img {
+      display: none;
+    }
+  }
+}
