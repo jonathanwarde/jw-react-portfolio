@@ -1,13 +1,14 @@
 import './scss/components/_nav.scss';
+import {Link} from "react-router-dom";
 const Nav = (props) => {
     return (
         <nav className="main-nav">
             <ul>
-                <li><a href="">home</a></li>
-                <li><a href="">projects</a></li>
-                <li><a href="">services</a></li>
-                <li><a href="">blog</a></li>
-                <li><a href="">contact</a></li>
+                <li><Link to="/">home</Link></li>
+                <li><Link to="/projects">projects</Link></li>
+                <li><Link to="/services">services</Link></li>
+                <li><Link to="/blog">blog</Link></li>
+                <li><Link to="/contact">contact</Link></li>
             </ul>
         </nav>
     );
