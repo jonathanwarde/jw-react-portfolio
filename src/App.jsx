@@ -1,12 +1,19 @@
 import './scss/global.scss';
 import './scss/_header.scss';
 import { createRoot } from "react-dom/client";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Project from "./Project";
 import Nav from "./Nav";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import Services from "./pages/Services";
+import Blog from "./pages/Blog";
+import Contact from "./pages/Contact";
 import DarkModeSwitch from "./DarkModeSwitch";
 
 const App = () => {
     return (
+        <BrowserRouter>
         <div className="content-grid">
             <header>
                 <DarkModeSwitch />
@@ -19,8 +26,14 @@ const App = () => {
             </header>
             <div className="flex-layout">
                 <main>
-                    <p><em>I make websites</em></p>
-                    <p>I design and build websites with a focus on standards, performance, and accessibility. With a decade of professional experience — in-house and remote — I've delivered for everyone. Whether it's PWAs, WordPress, or full-stack frameworks, I have the know-how to help.</p>
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/projects" element={<Projects />} />
+                        <Route path="/services" element={<Services />} />
+                        <Route path="/blog" element={<Blog />} />
+                        <Route path="/contact" element={<Contact />} />
+                    </Routes>
+
                 </main>
                 <aside>
                     <div className="section">
@@ -56,6 +69,7 @@ const App = () => {
                 </aside>
             </div>
         </div>
+        </BrowserRouter>
     );
 };
 
