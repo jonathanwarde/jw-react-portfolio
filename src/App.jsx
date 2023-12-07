@@ -1,4 +1,5 @@
 import './scss/global.scss';
+import './scss/_header.scss';
 import { createRoot } from "react-dom/client";
 import Project from "./Project";
 import Nav from "./Nav";
@@ -6,16 +7,17 @@ import DarkModeSwitch from "./DarkModeSwitch";
 
 const App = () => {
     return (
-        <div>
+        <div className="content-grid">
             <header>
                 <DarkModeSwitch />
-                <div className="content-grid">
+                <div>
                     <Nav />
                     <h1>Full stack (front end focussed) web developer</h1>
                     <p>Jonathan Warde</p>
                 </div>
+                <img src="img/jonwarde.png" alt="Jonathan Warde" className="hero-img" />
             </header>
-            <div className="content-grid">
+            <div className="flex-layout">
                 <main>
                     <p><em>I make websites</em></p>
                     <p>I design and build websites with a focus on standards, performance, and accessibility. With a decade of professional experience — in-house and remote — I've delivered for everyone. Whether it's PWAs, WordPress, or full-stack frameworks, I have the know-how to help.</p>

@@ -1,0 +1,36 @@
+.dark-mode-btn {
+  position: fixed;
+  top: 0;
+  left: 5rem;
+  width: 40px;
+  transition: all .2s ease;
+  transform: translateY(-10px);
+  color: var(--textColorPrimary);
+  cursor: pointer;
+
+  .ray {
+    display: none;
+  }
+
+  @media(hover: hover) and (pointer: fine) {
+    &:hover {
+      transform: translateY(0);
+
+      .ray {
+        display: block;
+      }
+    }
+  }
+}
+
+.visually-hidden {
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important; // Fix for https://github.com/twbs/bootstrap/issues/25686
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+  display: block;
+}
