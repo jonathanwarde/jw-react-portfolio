@@ -23,7 +23,7 @@ const App = () => {
                 <div>
                     <Nav />
                     <h1>Full stack (front end focussed) web developer</h1>
-                    <p>Jonathan Warde</p>
+                    <p><em>I make websites</em></p>
                 </div>
                 <HeroImg />
             </header>
@@ -40,7 +40,7 @@ const App = () => {
                 <aside>
                     <div className="section">
                         <div>
-                            <h2>Jonathan Warde</h2>
+                            <h2 className="h3">Jonathan Warde</h2>
                             <p></p>
                             <ul>
                                 <li>
@@ -59,13 +59,13 @@ const App = () => {
                         </div>
                         <div>
                             <Routes>
-                                <Route path="/" element={<HomeSide />} />
-                                <Route path="/projects" element={<ProjectsSide />} />
+                                <Route path="/projects" element={<HomeSide />} />
+                                <Route path="/" element={<ProjectsSide />} />
                             </Routes>
                         </div>
                     </div>
                     <div className="section">
-                        <h2>Blog</h2>
+                        <h2 className="h3">Blog</h2>
                         recent posts here
                         categories here
                     </div>
