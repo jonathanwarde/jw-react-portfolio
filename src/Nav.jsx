@@ -1,14 +1,14 @@
 import './scss/components/_nav.scss';
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 const Nav = (props) => {
     return (
         <nav className="main-nav">
             <ul>
-                <li><Link to="/">home</Link></li>
-                <li><Link to="/projects">projects</Link></li>
-                <li><Link to="/services">services</Link></li>
-                <li><Link to="/blog">blog</Link></li>
-                <li><Link to="/contact">contact</Link></li>
+                <li><NavLink exact to="/" activeClassName="active" end>home</NavLink></li>
+                <li><NavLink exact to="/projects" activeClassName="active">projects</NavLink></li>
+                <li><NavLink exact to="/services" activeClassName="active">services</NavLink></li>
+                <li><NavLink exact to="/blog" activeClassName="active">blog</NavLink></li>
+                <li><NavLink exact to="/contact" activeClassName="active">contact</NavLink></li>
             </ul>
         </nav>
     );
