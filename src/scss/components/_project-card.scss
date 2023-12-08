@@ -1,0 +1,36 @@
+.project {
+  container-type: inline-size;
+  container-name: project;
+  margin-bottom: 3rem;
+
+  .project__img {
+    position: relative;
+    height: 0;
+    padding-bottom: 60%;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+}
+@container project (width > 500px) {
+  .project {
+    .project__inner {
+      display: flex;
+    }
+    .project__img {
+      flex-basis: 50%;
+      padding-bottom: 40%;
+    }
+    .project__info {
+      flex-basis: 50%;
+      padding-left: 1rem;
+    }
+  }
+}

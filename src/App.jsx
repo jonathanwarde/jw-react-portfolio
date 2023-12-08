@@ -6,7 +6,9 @@ import Project from "./Project";
 import Nav from "./Nav";
 import HeroImg from "./HeroImg";
 import Home from "./pages/Home";
+import HomeSide from "./HomeSide";
 import Projects from "./pages/Projects";
+import ProjectsSide from "./ProjectsSide";
 import Services from "./pages/Services";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
@@ -56,9 +58,10 @@ const App = () => {
                             </ul>
                         </div>
                         <div>
-                            <h2>Projects</h2>
-                            <Project name="Spinnup" description="Multi-region marketing site for Universal Music Group distribution service" />
-                            <Project name="Top Secret Comedy Club" description="Website and Vue.js events management app for UK's top rated comedy cub" />
+                            <Routes>
+                                <Route path="/" element={<HomeSide />} />
+                                <Route path="/projects" element={<ProjectsSide />} />
+                            </Routes>
                         </div>
                     </div>
                     <div className="section">
