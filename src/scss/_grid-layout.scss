@@ -6,7 +6,6 @@
   --breakout-size: calc((var(--breakout-max-width) - var(--content-max-width)) / 2);
 
   display: grid;
-  min-height: 100vh;
   grid-template-columns:
           [fullwidth-start] minmax(var(--padding-inline), 1fr)
           [breakout-start] minmax(0, var(--breakout-size))
