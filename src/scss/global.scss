@@ -7,6 +7,9 @@
 @import 'flex-layout.scss';
 @import 'typography.scss';
 
+@import 'components/_social.scss';
+@import 'components/_footer.scss';
+
 body {
   color: var(--textColorPrimary);
   background-color: var(--bgColorPrimary);
