@@ -8,6 +8,7 @@
 
     main {
       flex-basis: 50%;
+      padding-right: 5rem;
     }
     aside {
       flex-basis: 50%;
@@ -25,4 +26,8 @@
       }
     }
   }
+}
+
+.margin-bottom {
+  margin-bottom: 6rem;
 }

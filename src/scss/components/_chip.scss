@@ -1,0 +1,10 @@
+.chip {
+  background-color: var(--bgColorAccent);
+  color: var(--bgColorPrimary);
+  display: inline-flex;
+  padding: 3px 10px;
+  border-radius: 3px;
+  margin: 0 6px 6px 0;
+  line-height: 1.4;
+  font-size: 1.4rem;
+}

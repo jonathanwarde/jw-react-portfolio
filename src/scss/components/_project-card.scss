@@ -7,6 +7,7 @@
     position: relative;
     height: 0;
     padding-bottom: 60%;
+    margin-bottom: 1rem;
 
     img {
       position: absolute;
@@ -30,7 +31,7 @@
     }
     .project__info {
       flex-basis: 50%;
-      padding-left: 1rem;
+      padding-left: 3rem;
     }
   }
 }

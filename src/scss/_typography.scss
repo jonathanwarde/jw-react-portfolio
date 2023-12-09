@@ -22,3 +22,26 @@ h2, .h2 {
   font-size: var(--font-size-xxl);
   text-wrap: balance;
 }
+
+h3, .h3 {
+  font-size: var(--font-size-xl);
+}
+
+h4, .h4 {
+  font-size: var(--font-size-lg);
+}
+
+p:not(:last-child) {
+  margin-bottom: 2em;
+}
+
+em {
+  font-weight: 600;
+  color: var(--textColorAccent);
+}
+
+.wysiwyg {
+  a {
+    color: var(--textColorSecondary)
+  }
+}
