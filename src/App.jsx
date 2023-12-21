@@ -36,7 +36,7 @@ const App = () => {
                         <Route path="/projects" element={<Projects />} />
                         <Route path="/services" element={<Services />} />
                         <Route path="/blog" element={<Blog />} />
-                        <Route path="/blog/:slug" element={<BlogSingle />} /> {/* New route for individual blog posts */}
+                        <Route path="/blog/:slug" element={<BlogSingle />} /> 
                         <Route path="/contact" element={<Contact />} />
                     </Routes>
                 </main>
@@ -79,6 +79,7 @@ const App = () => {
                     </div>
                     <div className="section">
                         <h2 className="h3">Blog</h2>
+                        <p><strong>Browse by tag</strong></p>
                         <GetBlogCategories />
                     </div>
                 </aside>
