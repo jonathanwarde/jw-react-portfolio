@@ -1,6 +1,7 @@
 import './scss/components/_chip.scss';
 
 import React, { useState, useEffect } from 'react';
+import {Link} from "react-router-dom";
 
 const GetBlogCategories = () => {
     const [categories, setCategories] = useState([]);
@@ -40,7 +41,11 @@ const GetBlogCategories = () => {
         <div>
             <ul>
                 {categories.map(category => (
-                    <li key={category.id} className="chip">{category.name}</li>
+                    <li key={category.id} className="chip">
+                        <Link to={`/bitsnbobs/category/${category.id}`}>
+                            {category.name}
+                        </Link>
+                    </li>
                 ))}
             </ul>
         </div>

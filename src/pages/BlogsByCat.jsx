@@ -34,8 +34,7 @@ const BlogsByCat = () => {
 
     return (
         <div className="blog-posts-container">
-            {/* Render the category name */}
-            <h1>{data.categoryName}</h1>
+            <h1 className="h2">{data.categoryName}</h1>
             <ul>
                 {Array.isArray(data.posts) && data.posts.map(post => (
                     <li key={post.id} className="margin-bottom">

@@ -21,7 +21,7 @@ const GetBlogPosts = () => {
             <ul>
                 {posts.map(post => (
                     <li key={post.id}>
-                        <Link to={`/blog/${post.slug}`}>
+                        <Link to={`/bitsnbobs/${post.slug}`}>
                             <h3 className="h4">{post.title.rendered}</h3>
                         </Link>
                     </li>
