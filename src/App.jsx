@@ -12,6 +12,7 @@ import ProjectsSide from "./ProjectsSide";
 import Services from "./pages/Services";
 import Blog from "./pages/Blog";
 import BlogSingle from "./pages/BlogSingle";
+import BlogsByCat from "./pages/BlogsByCat";
 import GetBlogCategories from "./GetBlogCategories";
 import Contact from "./pages/Contact";
 import DarkModeSwitch from "./DarkModeSwitch";
@@ -36,7 +37,8 @@ const App = () => {
                         <Route path="/projects" element={<Projects />} />
                         <Route path="/services" element={<Services />} />
                         <Route path="/blog" element={<Blog />} />
-                        <Route path="/blog/:slug" element={<BlogSingle />} /> 
+                        <Route path="/blog/:slug" element={<BlogSingle />} />
+                        <Route path="/blog/subject/:id" element={<BlogsByCat />} />
                         <Route path="/contact" element={<Contact />} />
                     </Routes>
                 </main>
