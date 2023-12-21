@@ -1,5 +1,6 @@
 import './scss/components/_blog-posts-container.scss';
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'; // Import Link
 
 const GetBlogPosts = () => {
     const [posts, setPosts] = useState([]);
@@ -20,7 +21,9 @@ const GetBlogPosts = () => {
             <ul>
                 {posts.map(post => (
                     <li key={post.id}>
-                        <h3 className="h4">{post.title.rendered}</h3>
+                        <Link to={`/blog/${post.slug}`}>
+                            <h3 className="h4">{post.title.rendered}</h3>
+                        </Link>
                     </li>
                 ))}
             </ul>
