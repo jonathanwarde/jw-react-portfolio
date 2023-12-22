@@ -36,9 +36,9 @@ const App = () => {
                         <Route path="/" element={<Home />} />
                         <Route path="/projects" element={<Projects />} />
                         <Route path="/services" element={<Services />} />
-                        <Route path="/blog" element={<Blog />} />
-                        <Route path="/blog/:slug" element={<BlogSingle />} />
-                        <Route path="/blog/subject/:id" element={<BlogsByCat />} />
+                        <Route path="/bitsnbobs" element={<Blog />} />
+                        <Route path="/bitsnbobs/:slug" element={<BlogSingle />} />
+                        <Route path="/bitsnbobs/category/:id" element={<BlogsByCat />} />
                         <Route path="/contact" element={<Contact />} />
                     </Routes>
                 </main>
@@ -81,7 +81,7 @@ const App = () => {
                     </div>
                     <div className="section">
                         <h2 className="h3">Blog</h2>
-                        <p><strong>Browse by tag</strong></p>
+                        <p><strong>Browse by category</strong></p>
                         <GetBlogCategories />
                     </div>
                 </aside>
