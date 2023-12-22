@@ -1,5 +1,11 @@
 #Jonathan Warde
-###web developer
+web developer
+
+#Deployment
+
+via stp bash script
+```./deploy_website.sh```
+
 
 ##jonwarde@gmail.com
 ##https://github.com/jonathanwarde
