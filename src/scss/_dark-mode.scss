@@ -2,7 +2,7 @@
   :root {
     --bgColorPrimary: #f6f6fa;
     --bgColorSecondary: #d195e5;
-    --bgColorAccent: #80d5ac;
+    --bgColorAccent: #63a183;
     --textColorPrimary: #252323;
     --textColorSecondary: #a252b7;
     --textColorAccent: #29543c;
@@ -10,10 +10,10 @@
 }
 
 body.-dark-mode {
-  --bgColorPrimary: #f6f6fa;
-  --bgColorSecondary: #d195e5;
-  --bgColorAccent: #80d5ac;
-  --textColorPrimary: #252323;
-  --textColorSecondary: #a252b7;
-  --textColorAccent: #29543c;
+  --bgColorPrimary: #f6f6fa !important;
+  --bgColorSecondary: #d195e5 !important;
+  --bgColorAccent: #80d5ac !important;
+  --textColorPrimary: #252323 !important;
+  --textColorSecondary: #a252b7 !important;
+  --textColorAccent: #29543c !important;
 }

@@ -9,3 +9,7 @@ header {
     }
   }
 }
+svg rect {
+  fill: white;
+  mask:url(#mask);
+}
