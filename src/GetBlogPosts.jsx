@@ -6,7 +6,7 @@ const GetBlogPosts = () => {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
-        fetch('https://jonwarde.co.uk/wp/wp-json/wp/v2/posts/')
+        fetch('https://jonwarde.co.uk/wp/wp-json/wp/v2/posts?per_page=60')
             .then(response => response.json())
             .then(data => {
                 setPosts(data);
