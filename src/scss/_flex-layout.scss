@@ -3,6 +3,10 @@
     flex-direction: column;
   margin-top: 5rem;
 
+  aside {
+    margin-top: 3rem;
+}
+
 
   @media screen and (min-width: 900px) {
     flex-direction: row;
@@ -13,6 +17,11 @@
     }
     aside {
       flex-basis: 50%;
+      margin-top: 0;
+      margin-bottom: auto;
+      position: sticky;
+      top: 30px;
+      gap:30px;
     }
   }
 

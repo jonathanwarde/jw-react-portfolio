@@ -9,8 +9,14 @@
 
 @import 'components/_social.scss';
 @import 'components/_footer.scss';
+@import 'components/_blog-posts-container.scss';
 
 body {
   color: var(--textColorPrimary);
   background-color: var(--bgColorPrimary);
+}
+
+.loader {
+  width: 40px;
+  height: 40px;
 }

@@ -5,9 +5,13 @@
 
   .project__img {
     position: relative;
-    height: 0;
-    padding-bottom: 60%;
     margin-bottom: 1rem;
+
+    &:before {
+      display: block;
+      padding-top: 56%;
+      content: "";
+    }
 
     img {
       position: absolute;
@@ -27,7 +31,6 @@
     }
     .project__img {
       flex-basis: 50%;
-      padding-bottom: 40%;
     }
     .project__info {
       flex-basis: 50%;

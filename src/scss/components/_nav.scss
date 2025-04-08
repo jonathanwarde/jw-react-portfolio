@@ -3,16 +3,39 @@
   ul {
     display: flex;
     padding: 0;
-
-    li {
-      margin-right: 2rem;
-    }
+    flex-wrap: wrap;
+    gap: 2rem;
+    position: relative;
 
     a {
       text-decoration: none;
+      border-radius: 18px;
+      padding: 2px 10px;
+      white-space: nowrap;
+        position: relative;
+        z-index: 2;
+  
+        &.-hovered {
+            color: var(--neutral5);
+        }
     }
+
     .active {
-      color: var(--textColorSecondary);
+      background-color: var(--textColorSecondary);
+      color: black;
     }
   }
 }
+
+.hover-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--textColorSecondary);
+  clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+  z-index: 1;
+}
+
+
