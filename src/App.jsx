@@ -16,10 +16,12 @@ import BlogsByCat from "./pages/BlogsByCat";
 import GetBlogCategories from "./GetBlogCategories";
 import Contact from "./pages/Contact";
 import DarkModeSwitch from "./DarkModeSwitch";
+import NavEffects from "./NavEffects";
 
 const App = () => {
     return (
         <BrowserRouter>
+        <NavEffects />
         <div className="content-grid">
             <header>
                 <DarkModeSwitch />
@@ -46,7 +48,6 @@ const App = () => {
                     <div className="section">
                         <div className="margin-bottom">
                             <h2 className="h3">Jonathan Warde</h2>
-                            <p></p>
                             <ul>
                                 <li>
                                     <a href='mailto:jonwarde@gmail.com' className="social">
@@ -74,7 +75,6 @@ const App = () => {
                         </div>
                         <div>
                             <Routes>
-                                <Route path="/projects" element={<HomeSide />} />
                                 <Route path="/" element={<ProjectsSide />} />
                             </Routes>
                         </div>
@@ -88,7 +88,7 @@ const App = () => {
             </div>
         </div>
             <footer className="content-grid">
-                <p>© 2024 Jonathan Warde</p>
+                <p>© 2025 Jonathan Warde</p>
             </footer>
         </BrowserRouter>
     );
