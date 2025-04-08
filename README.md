@@ -1,6 +1,12 @@
 #Jonathan Warde
 web developer
 
+# Build
+`npx vite build`
+
+# Preview
+`npx vite preview`
+
 #Deployment
 
 via stp bash script
