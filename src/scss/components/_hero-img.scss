@@ -1,5 +1,6 @@
 .hero-img-container {
   display: grid;
+  width: 40%;
 
   & > * {
     grid-area: 1 / 1;
@@ -12,11 +13,22 @@
   @media screen and (max-width: 900px) {
     img {
       width: 100%;
-      max-width: 40rem;
+      max-width: 14em;
     }
     svg {
       width: 100%;
-      max-width: 40rem;
+      max-width: 14rem;
+    }
+  }
+}
+
+body:not(.-dark-mode) {
+  .hero-img-container {
+    svg {
+      display: none;
+    }
+    img {
+      display: block;
     }
   }
 }
@@ -26,5 +38,9 @@
     img {
       display: none;
     }
+    svg {
+      display: block;
+    }
   }
 }
+

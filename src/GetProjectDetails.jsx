@@ -1,9 +1,11 @@
+//https://jonwarde.co.uk/wp/wp-json/wp/v2/project
+// https://jonwarde.co.uk/wp/wp-json/wp/v2/project?search=Miller%20Insurance
 import './scss/components/_chip.scss';
 
 import React, { useState, useEffect } from 'react';
 import {Link} from "react-router-dom";
 
-const GetBlogCategories = () => {
+const GetProjectDetails = () => {
     const [categories, setCategories] = useState([]);
     const [loading, setLoading] = useState(true);
 
@@ -61,4 +63,4 @@ const GetBlogCategories = () => {
     );
 };
 
-export default GetBlogCategories;
+export default GetProjectDetails;

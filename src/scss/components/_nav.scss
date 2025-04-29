@@ -14,15 +14,16 @@
       white-space: nowrap;
         position: relative;
         z-index: 2;
+        transition: color .2s ease;
   
         &.-hovered {
-            color: var(--neutral5);
+            color: white;
         }
     }
 
     .active {
       background-color: var(--textColorSecondary);
-      color: black;
+      color: white;
     }
   }
 }

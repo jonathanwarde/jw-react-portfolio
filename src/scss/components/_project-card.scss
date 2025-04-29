@@ -23,6 +23,21 @@
     }
   }
 
+  .project__info p {
+    margin-bottom: 1rem;
+  }
+
+  .project__info ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .project__info .chip {
+    font-size: 1rem;
+    background-color: var(--bgColorSecondary);
+    color: #343436;
+  }
+
 }
 @container project (width > 500px) {
   .project {

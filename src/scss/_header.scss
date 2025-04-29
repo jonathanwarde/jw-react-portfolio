@@ -5,11 +5,16 @@ header {
     align-items: end;
 
     .hero-img {
-      width: 29rem;
+      width: 14rem;
     }
   }
 }
 svg rect {
   fill: white;
   mask:url(#mask);
+}
+
+.header-main {
+  display: flex;
+  align-items: flex-end;
 }

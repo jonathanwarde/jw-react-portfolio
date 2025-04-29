@@ -1,4 +1,5 @@
-@media (prefers-color-scheme: dark) {
+
+/*@media (prefers-color-scheme: dark) {
   :root {
     --bgColorPrimary: #f6f6fa;
     --bgColorSecondary: #d195e5;
@@ -7,7 +8,7 @@
     --textColorSecondary: #a252b7;
     --textColorAccent: #29543c;
   }
-}
+}*/
 
 body.-dark-mode {
   --bgColorPrimary: #f6f6fa !important;

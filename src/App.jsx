@@ -3,6 +3,7 @@ import './scss/_header.scss';
 import { createRoot } from "react-dom/client";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Project from "./Project";
+import ProjectDetail from "./ProjectDetail"; 
 import Nav from "./Nav";
 import HeroImg from "./HeroImg";
 import Home from "./pages/Home";
@@ -19,6 +20,7 @@ import DarkModeSwitch from "./DarkModeSwitch";
 import NavEffects from "./NavEffects";
 import ChannelLinks from './ChannelLinks';
 import CVLink from './CVLink';
+import CanvasParticles from './CanvasParticles';
 
 const App = () => {
     return (
@@ -28,18 +30,21 @@ const App = () => {
             <header>
                 <DarkModeSwitch />
                 <CVLink />
-                <div>
-                    <Nav />
-                    <h1>Full stack (Front End focussed) Web Developer</h1>
-                    <p><em>Web Performance | Accessibility | UX | Technical SEO</em></p>
+                <div className="header-main">
+                    <div>
+                        <Nav />
+                        <h1>Full stack (Front End focussed) Web Developer</h1>
+                        <p><em>Web Performance | Accessibility | UX | Technical SEO</em></p>
+                    </div>
+                    <HeroImg />
                 </div>
-                <HeroImg />
             </header>
             <div className="flex-layout">
                 <main className="wysiwyg">
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/projects" element={<Projects />} />
+                        <Route path="/project/:title" element={<ProjectDetail />} />
                         <Route path="/services" element={<Services />} />
                         <Route path="/bitsnbobs" element={<Blog />} />
                         <Route path="/bitsnbobs/:slug" element={<BlogSingle />} />

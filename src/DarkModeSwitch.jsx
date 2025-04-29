@@ -1,7 +1,24 @@
 import './scss/components/_dark-mode-switch.scss';
 const DarkModeSwitch = (props) => {
+
+    const mode = localStorage.getItem("jwardeDarkMode");
+    if (mode === 'true') {
+        document.body.classList.add('-dark-mode');
+        document.getElementById('root').style.setProperty('--particle-colour', '#000');
+    } else {
+        document.body.classList.remove('-dark-mode');
+        document.getElementById('root').style.setProperty('--particle-colour', '#ffffff');
+    }
+
     function toggleDarkMode() {
         document.body.classList.toggle('-dark-mode');
+        if(document.body.classList.contains('-dark-mode')){
+            localStorage.setItem("jwardeDarkMode", "true");
+            document.getElementById('root').style.setProperty('--particle-colour', '#000');
+        } else {
+            localStorage.removeItem("jwardeDarkMode");
+            document.getElementById('root').style.setProperty('--particle-colour', '#ffffff');
+        }
     }
     return (
         <button

@@ -1,0 +1,14 @@
+a.cv-link {
+    text-decoration: none;
+    border-radius: 18px;
+    padding: 2px 10px;
+    white-space: nowrap;
+    background-color: var(--textColorSecondary);
+    color: #ffff;
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    z-index: 9;
+    display: flex;
+    gap: 3px;
+}
