@@ -2,12 +2,13 @@ import './scss/global.scss';
 import './scss/_header.scss';
 import { createRoot } from "react-dom/client";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import Project from "./Project";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+//import Project from "./Project";
 import ProjectDetail from "./ProjectDetail"; 
 import Nav from "./Nav";
 import HeroImg from "./HeroImg";
 import Home from "./pages/Home";
-import HomeSide from "./HomeSide";
+//import HomeSide from "./HomeSide";
 import Projects from "./pages/Projects";
 import ProjectsSide from "./ProjectsSide";
 import Services from "./pages/Services";
@@ -20,10 +21,13 @@ import DarkModeSwitch from "./DarkModeSwitch";
 import NavEffects from "./NavEffects";
 import ChannelLinks from './ChannelLinks';
 import CVLink from './CVLink';
-import CanvasParticles from './CanvasParticles';
+//import CanvasParticles from './CanvasParticles';
 
 const App = () => {
+    const queryClient = new QueryClient();
+
     return (
+        <QueryClientProvider client={queryClient}>
         <BrowserRouter>
         <NavEffects />
         <div className="content-grid">
@@ -79,6 +83,7 @@ const App = () => {
                 </div>
             </footer>
         </BrowserRouter>
+        </QueryClientProvider>
     );
 };
 
